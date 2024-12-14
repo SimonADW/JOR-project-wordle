@@ -124,17 +124,20 @@ h1 {
   --radius: 0px 0px 0px 4px;
 }
 
-.cell.correct {
+.cell.correct,
+.guess-input__keyboard-key.correct {
   background: var(--color-success);
   border-color: var(--color-success);
   color: white;
 }
-.cell.incorrect {
+.cell.incorrect,
+.guess-input__keyboard-key.incorrect {
   background: var(--color-gray-300);
   border-color: var(--color-gray-300);
   color: white;
 }
-.cell.misplaced {
+.cell.misplaced,
+.guess-input__keyboard-key.misplaced {
   background: var(--color-warning);
   border-color: var(--color-warning);
   color: white;
@@ -149,6 +152,26 @@ h1 {
 
 .guess-input-wrapper label {
   font-size: 1.25rem;
+}
+
+.guess-input__keyboard-row {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.guess-input__keyboard-key {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px 15px;
+}
+
+.guess-input__keyboard-key:hover {
+  background-color: #bcb7b7;
+}
+
+.guess-input__keyboard-key:active {
+  background-color: #727171;
 }
 
 .guess-input-wrapper input {
@@ -174,6 +197,10 @@ h1 {
   animation: slideUp 750ms cubic-bezier(0, 0.72, 0.24, 1.02);
   border-radius: 4px 4px 0px 0px;
   will-change: transform;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
 .happy.banner {
@@ -183,6 +210,12 @@ h1 {
 .sad.banner {
   background: var(--color-error);
   color: white;
+}
+
+.banner__restart-button {
+  width: fit-content;
+  padding: 1rem 2rem;
+  border: 1px solid;
 }
 
 .visually-hidden {

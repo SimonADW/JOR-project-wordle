@@ -50,3 +50,39 @@ export const WORDS = [
   'FLAKE',
   'SOUND',
 ];
+
+// Keyboard characters
+export const keyboardCharacters = [
+  [
+    { status: '', letter: 'Q' },
+    { status: '', letter: 'W' },
+    { status: '', letter: 'E' },
+    { status: '', letter: 'R' },
+    { status: '', letter: 'T' },
+    { status: '', letter: 'Y' },
+    { status: '', letter: 'U' },
+    { status: '', letter: 'I' },
+    { status: '', letter: 'O' },
+    { status: '', letter: 'P' },
+  ],
+  [
+    { status: '', letter: 'A' },
+    { status: '', letter: 'S' },
+    { status: '', letter: 'D' },
+    { status: '', letter: 'F' },
+    { status: '', letter: 'G' },
+    { status: '', letter: 'H' },
+    { status: '', letter: 'J' },
+    { status: '', letter: 'K' },
+    { status: '', letter: 'L' },
+  ],
+  [
+    { status: '', letter: 'Z' },
+    { status: '', letter: 'X' },
+    { status: '', letter: 'C' },
+    { status: '', letter: 'V' },
+    { status: '', letter: 'B' },
+    { status: '', letter: 'N' },
+    { status: '', letter: 'M' },
+  ],
+];
